@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics | Sri Githam Junior College</title>
+
+    <!-- SEO & Meta Tags -->
+    <meta name="description" content="Sri Githam Junior College offers premier education in MPC, BiPC, MEC, and CEC with state-of-the-art facilities and experienced faculty. Shape the leaders of tomorrow.">
+    <meta name="keywords" content="Junior College, Sri Githam, Education, MPC, BiPC, MEC, CEC, High School, College Admissions">
+    <meta name="author" content="Sri Githam Management">
+    
+    <!-- Open Graph Tags (Social Sharing) -->
+    <meta property="og:title" content="Sri Githam Junior College">
+    <meta property="og:description" content="Providing quality education with a perfect blend of academics and extracurricular activities.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://srigithamcollege.edu">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png" sizes="32x32">
+    
+    <!-- Analytics -->
+    <script src="js/analytics.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-hero {
+            background: linear-gradient(rgba(139, 0, 0, 0.8), rgba(139, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+        }
+        .course-card {
+            display: flex;
+            background: var(--color-white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 3rem;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+        }
+        .course-img {
+            width: 40%;
+            object-fit: cover;
+        }
+        .course-info {
+            width: 60%;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .course-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .feature-item {
+            display: flex;
+            align-items: center;
+            font-size: 0.95rem;
+        }
+        .feature-item i {
+            color: var(--color-secondary);
+            margin-right: 10px;
+        }
+        @media (max-width: 768px) {
+            .course-card {
+                flex-direction: column;
+            }
+            .course-img, .course-info {
+                width: 100%;
+            }
+            .course-img {
+                height: 250px;
+            }
+            .course-features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div>
+                <i class="fas fa-phone-alt"></i> +91 8988686861 &nbsp; | &nbsp;
+                <i class="fas fa-envelope"></i> srigithamjuniorcollege@gmail.com
+            </div>
+            <div>
+                <a href="https://www.facebook.com/SriGithamJuniorCollege/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/srigithamjuniorcollege_/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo-container">
+                <div class="logo-icon-wrap">
+                    <img src="images/logo.png" alt="Logo" class="logo-img">
+                </div>
+                <div class="logo-text-wrap">
+                    <div class="logo-text-main">GITHAM</div>
+                    <div class="logo-text-sub">JUNIOR COLLEGE</div>
+                </div>
+            </a>
+            <button class="hamburger"><i class="fas fa-bars"></i></button>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="academics.html" class="nav-link active">Academics</a></li>
+                <li class="nav-item"><a href="facilities.html" class="nav-link">Facilities</a></li>
+                <li class="nav-item"><a href="admissions.html" class="nav-link">Admissions</a></li>
+                <li class="nav-item"><a href="faculty.html" class="nav-link">Faculty</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 style="color: white; font-size: 3rem; margin-bottom: 0.5rem;">Academic Programs</h1>
+            <p style="font-size: 1.2rem; margin-bottom: 0;">Explore our diverse array of courses designed for your success.</p>
+        </div>
+    </section>
+
+    <!-- Academic Overview -->
+    <section class="section" style="padding-bottom: 2rem;">
+        <div class="container text-center">
+            <h2 class="section-title">Courses Offered</h2>
+            <p style="max-width: 800px; margin: 0 auto; color: var(--color-text-muted);">At Sri Githam, we offer the standard two-year intermediate education curriculum mandated by the Board of Intermediate Education, with integrated coaching for competitive exams like JEE, NEET, EAMCET, and CA Foundation.</p>
+        </div>
+    </section>
+
+    <!-- Detailed Courses -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+
+            <!-- MPC Card -->
+            <div class="course-card">
+                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=800" alt="MPC" class="course-img">
+                <div class="course-info">
+                    <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem; color: var(--color-primary);">MPC</h2>
+                    <h4 style="color: var(--color-secondary); margin-bottom: 1rem; font-family: var(--font-main);">Mathematics | Physics | Chemistry</h4>
+                    <p style="color: var(--color-text-muted);">The MPC stream is tailormade for students aspiring to pursue careers in Engineering, Architecture, and pure Sciences. Our integrated approach provides rigorous coaching for JEE (Mains & Advanced) and State EAMCET, alongside regular board exam preparation.</p>
+                    <div class="course-features">
+                        <div class="feature-item"><i class="fas fa-laptop-code"></i> Engineering Focus</div>
+                        <div class="feature-item"><i class="fas fa-pencil-ruler"></i> JEE/EAMCET Coaching</div>
+                        <div class="feature-item"><i class="fas fa-vial"></i> Advanced Laboratories</div>
+                        <div class="feature-item"><i class="fas fa-book-reader"></i> Daily Practice Tests</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BiPC Card -->
+            <div class="course-card">
+                <div class="course-info" style="order: 2;">
+                    <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem; color: var(--color-primary);">BiPC</h2>
+                    <h4 style="color: var(--color-secondary); margin-bottom: 1rem; font-family: var(--font-main);">Biology | Physics | Chemistry</h4>
+                    <p style="color: var(--color-text-muted);">Designed for future medical professionals, botanists, and zoologists. The BiPC program offers deep insights into life sciences with intensive NEET coaching. Our expert faculty ensures students are conceptually strong and competitively ready.</p>
+                    <div class="course-features">
+                        <div class="feature-item"><i class="fas fa-user-md"></i> Medical/Dental Focus</div>
+                        <div class="feature-item"><i class="fas fa-stethoscope"></i> NEET Coaching</div>
+                        <div class="feature-item"><i class="fas fa-microscope"></i> Modern Bio Labs</div>
+                        <div class="feature-item"><i class="fas fa-brain"></i> Conceptual Learning</div>
+                    </div>
+                </div>
+                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=800" alt="BiPC" class="course-img" style="order: 1;">
+            </div>
+
+            <!-- MEC Card -->
+            <div class="course-card">
+                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" alt="MEC" class="course-img">
+                <div class="course-info">
+                    <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem; color: var(--color-primary);">MEC</h2>
+                    <h4 style="color: var(--color-secondary); margin-bottom: 1rem; font-family: var(--font-main);">Mathematics | Economics | Commerce</h4>
+                    <p style="color: var(--color-text-muted);">The MEC stream perfectly bridges analytical mathematics with commerce and economics. It is the ideal stepping stone for careers in Chartered Accountancy (CA), Cost Accountancy (CMA), Business Management, and Finance.</p>
+                    <div class="course-features">
+                        <div class="feature-item"><i class="fas fa-chart-line"></i> Business & Finance Focus</div>
+                        <div class="feature-item"><i class="fas fa-calculator"></i> CA Foundation Coaching</div>
+                        <div class="feature-item"><i class="fas fa-briefcase"></i> Commerce Lab</div>
+                        <div class="feature-item"><i class="fas fa-globe"></i> Market Analysis Skills</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CEC Card -->
+            <div class="course-card">
+                <div class="course-info" style="order: 2;">
+                    <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem; color: var(--color-primary);">CEC</h2>
+                    <h4 style="color: var(--color-secondary); margin-bottom: 1rem; font-family: var(--font-main);">Commerce | Economics | Civics</h4>
+                    <p style="color: var(--color-text-muted);">CEC is designed for students aiming for careers in Civil Services (UPSC), Law, Business Administration, and Humanities. The curriculum builds a strong foundation in societal structures, economic principles, and accounting practices.</p>
+                    <div class="course-features">
+                        <div class="feature-item"><i class="fas fa-landmark"></i> Civil Services Foundation</div>
+                        <div class="feature-item"><i class="fas fa-balance-scale"></i> Law Entrance Prep (CLAT)</div>
+                        <div class="feature-item"><i class="fas fa-users"></i> Debate & GD Sessions</div>
+                        <div class="feature-item"><i class="fas fa-newspaper"></i> Current Affairs Focus</div>
+                    </div>
+                </div>
+                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800" alt="CEC" class="course-img" style="order: 1;">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="section section-light">
+        <div class="container text-center">
+            <h2 style="margin-bottom: 1rem;">Ready to begin your journey?</h2>
+            <p style="margin-bottom: 2rem;">Admissions are currently open for all streams. Apply online today.</p>
+            <a href="admissions.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2rem;">Proceed to Admissions</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-container mb-1">
+                        <img src="images/logo.png" alt="Logo" class="logo-img-footer">
+                        <div class="logo-text-wrap">
+                            <div class="logo-text-main-footer">GITHAM</div>
+                            <div class="logo-text-sub-footer">JUNIOR COLLEGE</div>
+                        </div>
+                    </div>
+                    <p>Providing quality education with a perfect blend of academics and extracurricular activities to shape the leaders of tomorrow.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/SriGithamJuniorCollege/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/srigithamjuniorcollege_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@srigithamjuniorcollege" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Student Corner</h3>
+                    <ul class="footer-links">
+                        <li><a href="achievements.html">Achievements</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="#">Student Portal(comming soon...)</a></li>
+                        <li><a href="#">Exam Schedule(comming soon...)</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul style="color: #d1d5db;">
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-map-marker-alt" style="color: var(--color-accent); width: 20px;"></i> Intell College building, Old, Kalyandurgam Rd, Akkampalle, cross, Anantapur, Rachanapalle, Andhra Pradesh 515006</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-phone-alt" style="color: var(--color-accent); width: 20px;"></i> +91 8988686861</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-envelope" style="color: var(--color-accent); width: 20px;"></i>srigithamjuniorcollege@gmail<br>.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sri Githam Junior College. All Rights Reserved.</p>
+            <p style="margin-top: 5px; font-size: 0.9em; opacity: 0.8;">Designed &amp; Developed by <a href="https://sathvik222-3.github.io/portfolio/"target="_blank" style="color: var(--color-accent); font-weight: 500;">Sathvik</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities & Campus Life | Sri Githam Junior College</title>
+
+    <!-- SEO & Meta Tags -->
+    <meta name="description" content="Sri Githam Junior College offers premier education in MPC, BiPC, MEC, and CEC with state-of-the-art facilities and experienced faculty. Shape the leaders of tomorrow.">
+    <meta name="keywords" content="Junior College, Sri Githam, Education, MPC, BiPC, MEC, CEC, High School, College Admissions">
+    <meta name="author" content="Sri Githam Management">
+    
+    <!-- Open Graph Tags (Social Sharing) -->
+    <meta property="og:title" content="Sri Githam Junior College">
+    <meta property="og:description" content="Providing quality education with a perfect blend of academics and extracurricular activities.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://srigithamcollege.edu">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png" sizes="32x32">
+    
+    <!-- Analytics -->
+    <script src="js/analytics.js"></script>
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-hero {
+            background: linear-gradient(rgba(139, 0, 0, 0.8), rgba(139, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .facility-card {
+            background: var(--color-white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            transition: transform var(--transition-speed) ease;
+        }
+        
+        .facility-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .facility-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .facility-content {
+            padding: 2rem;
+            flex: 1;
+        }
+
+        .facility-content h3 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--color-primary);
+        }
+
+        .facility-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .facility-list li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .facility-list li i {
+            color: var(--color-accent);
+            margin-top: 4px;
+        }
+
+        .icon-box-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .icon-box {
+            text-align: center;
+            padding: 2rem;
+            background: var(--color-light-bg);
+            border-radius: var(--border-radius);
+        }
+
+        .icon-box i {
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+
+        .day-scholar-section {
+            background: var(--color-light-bg);
+            padding: 4rem 2rem;
+            border-radius: var(--border-radius);
+            margin-top: 4rem;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .day-scholar-content {
+            flex: 1;
+        }
+
+        .day-scholar-img {
+            flex: 1;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        @media (max-width: 768px) {
+            .day-scholar-section {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div>
+                <i class="fas fa-phone-alt"></i> +91 8988686861 &nbsp; | &nbsp;
+                <i class="fas fa-envelope"></i> srigithamjuniorcollege@gmail.com
+            </div>
+            <div>
+                <a href="https://www.facebook.com/SriGithamJuniorCollege/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/srigithamjuniorcollege_/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo-container">
+                <div class="logo-icon-wrap">
+                    <img src="images/logo.png" alt="Logo" class="logo-img">
+                </div>
+                <div class="logo-text-wrap">
+                    <div class="logo-text-main">GITHAM</div>
+                    <div class="logo-text-sub">JUNIOR COLLEGE</div>
+                </div>
+            </a>
+            
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li>
+                <li class="nav-item"><a href="facilities.html" class="nav-link active">Facilities</a></li>
+                <li class="nav-item"><a href="admissions.html" class="nav-link">Admissions</a></li>
+                <li class="nav-item"><a href="faculty.html" class="nav-link">Faculty</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 style="color: white; font-size: 3rem; margin-bottom: 0.5rem;">Hostel & Campus Life</h1>
+            <p style="font-size: 1.2rem; margin-bottom: 0;">A premier academic environment where students thrive, grow, and succeed.</p>
+        </div>
+    </section>
+
+    <!-- Hostel Accommodation -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Hostel Accommodation</h2>
+            <p class="text-center" style="max-width: 800px; margin: 0 auto 3rem auto;">
+                Sri Githam Junior College provides safe, comfortable, and well-maintained hostel accommodations tailored to foster a focused study environment.
+            </p>
+
+            <div class="grid-2">
+                <!-- Boys Hostel -->
+                <div class="facility-card">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&q=80&w=800" alt="Boys Hostel Building" class="facility-img">
+                    <div class="facility-content">
+                        <h3><i class="fas fa-building"></i> Boys Hostel</h3>
+                        <p>Our Boys Hostel offers a secure and conducive environment for focused academic preparation and personal growth.</p>
+                        <ul class="facility-list">
+                            <li><i class="fas fa-check-circle"></i> Dedicated secure building blocks.</li>
+                            <li><i class="fas fa-check-circle"></i> 24/7 supervision by experienced wardens.</li>
+                            <li><i class="fas fa-check-circle"></i> Spacious, well-ventilated, and comfortably furnished rooms.</li>
+                            <li><i class="fas fa-check-circle"></i>In-house medical assistance and regular health checkups.</li>
+                            <li><i class="fas fa-check-circle"></i> Clean RO drinking water supply.</li>
+                            <li><i class="fas fa-check-circle"></i> Dedicated study halls and recreation facilities (TV/Indoor Games).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Girls Hostel -->
+                <div class="facility-card">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800" alt="Girls Hostel Building" class="facility-img">
+                    <div class="facility-content">
+                        <h3><i class="fas fa-shield-alt"></i> Girls Hostel</h3>
+                        <p>Safety and comfort are our top priorities in the Girls Hostel, providing peace of mind for parents and students alike.</p>
+                        <ul class="facility-list">
+                            <li><i class="fas fa-check-circle"></i> Highly secure, separate campus with stringent access control.</li>
+                            <li><i class="fas fa-check-circle"></i> Round-the-clock female wardens and comprehensive CCTV security.</li>
+                            <li><i class="fas fa-check-circle"></i> Comfortable, well-lit rooms with adequate storage.</li>
+                            <li><i class="fas fa-check-circle"></i> Dedicated study environments free from distractions.</li>
+                            <li><i class="fas fa-check-circle"></i> Hygienic washrooms with continuous water supply.</li>
+                            <li><i class="fas fa-check-circle"></i> In-house medical assistance and regular health checkups.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mess / Dining Facility -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Mess & Dining Facility</h2>
+            <div class="grid-2" style="align-items: center;">
+                <div>
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800" alt="Hygienic Dining Hall" style="border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
+                </div>
+                <div>
+                    <h3 style="display: flex; align-items: center; gap: 10px; color: var(--color-primary); font-size: 1.8rem; margin-bottom: 1rem;">
+                        <i class="fas fa-utensils"></i> Nutritious Vegetarian Meals
+                    </h3>
+                    <p style="font-size: 1.1rem;">
+                        A healthy body houses a healthy mind. Our expansive, highly hygienic dining hall is designed to cater to the dietary needs of growing teenagers, ensuring they have the energy required for arduous academic schedules.
+                    </p>
+                    <ul class="facility-list" style="font-size: 1.1rem;">
+                        <li><i class="fas fa-leaf"></i> 100% pure vegetarian & non-vegetarian, highly nutritious menu planned by dieticians.</li>
+                        <li><i class="fas fa-clock"></i> Four robust meals daily: Breakfast, Lunch, Evening Snacks, and Dinner.</li>
+                        <li><i class="fas fa-broom"></i> State-of-the-art automated kitchen ensuring absolute hygiene.</li>
+                        <li><i class="fas fa-users"></i> Large seating capacity to comfortably accommodate students.</li>
+                        <li><i class="fas fa-calendar-alt"></i> Diverse menu that rotates regularly to prevent monotony.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus & Day Scholar Facilities -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Academic & Campus Amenities</h2>
+            
+            <p class="text-center" style="max-width: 800px; margin: 0 auto 2rem auto;">
+                Beyond accommodations, Sri Githam Junior College is equipped with cutting-edge academic infrastructure to facilitate premium learning experiences.
+            </p>
+
+            <div class="icon-box-grid">
+                <div class="icon-box">
+                    <i class="fas fa-snowflake fa-3x"></i>
+                    <h4>A/C Classrooms</h4>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem; color: var(--color-text-muted);">Well-furnished, climate-controlled classrooms equipped with digital boards.</p>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-flask fa-3x"></i>
+                    <h4>Modern Laboratories</h4>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem; color: var(--color-text-muted);">Fully equipped Physics, Chemistry, and Biology labs for hands-on practical learning.</p>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-book-reader fa-3x"></i>
+                    <h4>Library & Reading Hall</h4>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem; color: var(--color-text-muted);">Extensive collection of reference materials, journals, and a quiet reading hall.</p>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-running fa-3x"></i>
+                    <h4>Sports Facilities</h4>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem; color: var(--color-text-muted);">Playgrounds and equipment for cricket, volleyball, badminton, and indoor games.</p>
+                </div>
+            </div>
+
+            <!-- Day Scholar Facility -->
+            <div class="day-scholar-section">
+                <div class="day-scholar-content">
+                <div class="grid-2" style="align-items: center;">
+                <div>
+                    <h3 style="display: flex; align-items: center; gap: 10px; color: var(--color-primary); font-size: 1.8rem; margin-bottom: 1rem;">
+                        <i class="fas fa-bus"></i> Day Scholar Transport Facility
+                    </h3>
+                    <p style="font-size: 1.05rem;">
+                        For students preferring to attend classes and return home daily, we offer a highly reliable and safe transport network covering a wide radius. 
+                    </p>
+                    <ul class="facility-list" style="margin-top: 1.5rem;">
+                        <li><i class="fas fa-check-circle"></i> Fleet of well-maintained, GPS-tracked buses.</li>
+                        <li><i class="fas fa-check-circle"></i> Experienced drivers and dedicated attendants.</li>
+                        <li><i class="fas fa-check-circle"></i> Seamless access to all campus amenities (library, labs) during working hours.</li>
+                        <li><i class="fas fa-check-circle"></i> Highly secure campus entry/exit monitoring.</li>
+                    </ul>
+                </div>
+                <div>
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=800" alt="College Bus " style="border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
+                </div>
+            </div>
+           </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-container mb-1">
+                        <img src="images/logo.png" alt="Logo" class="logo-img-footer">
+                        <div class="logo-text-wrap">
+                            <div class="logo-text-main-footer">GITHAM</div>
+                            <div class="logo-text-sub-footer">JUNIOR COLLEGE</div>
+                        </div>
+                    </div>
+                    <p>Providing quality education with a perfect blend of academics and extracurricular activities to shape the leaders of tomorrow.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/SriGithamJuniorCollege/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/srigithamjuniorcollege_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@srigithamjuniorcollege" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Student Corner</h3>
+                    <ul class="footer-links">
+                        <li><a href="achievements.html">Achievements</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="#">Student Portal(comming soon...)</a></li>
+                        <li><a href="#">Exam Schedule(comming soon...)</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul style="color: #d1d5db;">
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-map-marker-alt" style="color: var(--color-accent); width: 20px;"></i> Intell College building, Old, Kalyandurgam Rd, Akkampalle, cross, Anantapur, Rachanapalle, Andhra Pradesh 515006/li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-phone-alt" style="color: var(--color-accent); width: 20px;"></i> +91 8988686861</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-envelope" style="color: var(--color-accent); width: 20px;"></i>srigithamjuniorcollege@gmail<br>.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sri Githam Junior College. All Rights Reserved.</p>
+            <p style="margin-top: 5px; font-size: 0.9em; opacity: 0.8;">Designed &amp; Developed by <a href="https://sathvik222-3.github.io/portfolio/"target="_blank" style="color: var(--color-accent); font-weight: 500;">Sathvik</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+

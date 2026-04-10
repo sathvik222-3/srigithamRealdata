@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Sri Githam Junior College</title>
+
+    <!-- SEO & Meta Tags -->
+    <meta name="description" content="Sri Githam Junior College offers premier education in MPC, BiPC, MEC, and CEC with state-of-the-art facilities and experienced faculty. Shape the leaders of tomorrow.">
+    <meta name="keywords" content="Junior College, Sri Githam, Education, MPC, BiPC, MEC, CEC, High School, College Admissions">
+    <meta name="author" content="Sri Githam Management">
+    
+    <!-- Open Graph Tags (Social Sharing) -->
+    <meta property="og:title" content="Sri Githam Junior College">
+    <meta property="og:description" content="Providing quality education with a perfect blend of academics and extracurricular activities.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://srigithamcollege.edu">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png" sizes="32x32">
+    
+    <!-- Analytics -->
+    <script src="js/analytics.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style> 
+        .page-hero {
+            background: linear-gradient(rgba(139, 0, 0, 0.8), rgba(139, 0, 0, 0.8)), url('images/background.jpg') center/cover;
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .filter-btn {
+            padding: 0.5rem 1.5rem;
+            border: 2px solid var(--color-primary);
+            background: transparent;
+            color: var(--color-primary);
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--color-primary);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div>
+                <i class="fas fa-phone-alt"></i> +91  8988686861 &nbsp; | &nbsp;
+                <i class="fas fa-envelope"></i> srigithamjuniorcollege@gmail.com
+            </div>
+            <div>
+                <a href="https://www.facebook.com/SriGithamJuniorCollege/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/srigithamjuniorcollege_/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo-container">
+                <div class="logo-icon-wrap">
+                    <img src="images/logo.png" alt="Logo" class="logo-img">
+                </div>
+                <div class="logo-text-wrap">
+                    <div class="logo-text-main">GITHAM</div>
+                    <div class="logo-text-sub">JUNIOR COLLEGE</div>
+                </div>
+            </a>
+            <button class="hamburger"><i class="fas fa-bars"></i></button>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li>
+                <li class="nav-item"><a href="admissions.html" class="nav-link">Admissions</a></li>
+                <li class="nav-item"><a href="faculty.html" class="nav-link">Faculty</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 style="color: white; font-size: 3rem; margin-bottom: 0.5rem;">Photo Gallery</h1>
+            <p style="font-size: 1.2rem; margin-bottom: 0;">Glimpses of life at Sri Githam Junior College.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section">
+        <div class="container">
+
+            <div class="gallery-grid" id="dynamic-gallery">
+                <div class="gallery-item">
+                    <img loading="lazy" decoding="async" src="images/students-in-campus.jpg" alt="Students in campus" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>Campus Life</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img loading="lazy" decoding="async" src="images/science-lab.jpg" alt="Science Lab" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>Science Labs</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img loading="lazy" decoding="async" src="images/library.jpg" alt="Library" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>Central Library</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img loading="lazy" decoding="async" src="images/computer-lab.jpg" alt="Computer Lab" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>Computer Labs</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img loading="lazy" decoding="async" src="images/annual-day.jpg" alt="Annual Day" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>Annual Day Fest</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img loading="lazy" decoding="async" src="images/classroom.jpg" alt="Classroom" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>Interactive Classrooms</h4>
+                    </div>
+                </div>
+                
+                <!-- Video Gallery Items -->
+                <div class="gallery-item">
+                    <video autoplay muted loop playsinline class="gallery-img" style="object-fit: cover;">
+                        <source src="https://assets.mixkit.co/videos/preview/mixkit-students-walking-in-a-university-campus-4258-large.mp4" type="video/mp4">
+                    </video>
+                    <div class="gallery-overlay">
+                        <h4>Campus Tour (Video)</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <video autoplay muted loop playsinline class="gallery-img" style="object-fit: cover;">
+                        <source src="https://assets.mixkit.co/videos/preview/mixkit-group-of-friends-partying-happily-4640-large.mp4" type="video/mp4">
+                    </video>
+                    <div class="gallery-overlay">
+                        <h4>College Events (Video)</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Load More (Mock) -->
+            <div class="text-center mt-3">
+                <button id="load-more-btn" class="btn btn-outline">Load More Photos</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-container mb-1">
+                        <img src="images/logo.png" alt="Logo" class="logo-img-footer">
+                        <div class="logo-text-wrap">
+                            <div class="logo-text-main-footer">GITHAM</div>
+                            <div class="logo-text-sub-footer">JUNIOR COLLEGE</div>
+                        </div>
+                    </div>
+                    <p>Providing quality education with a perfect blend of academics and extracurricular activities to shape the leaders of tomorrow.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/SriGithamJuniorCollege/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/srigithamjuniorcollege_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@srigithamjuniorcollege" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Student Corner</h3>
+                    <ul class="footer-links">
+                        <li><a href="achievements.html">Achievements</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="#">Student Portal(comming soon...)</a></li>
+                        <li><a href="#">Exam Schedule(comming soon...)</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul style="color: #d1d5db;">
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-map-marker-alt" style="color: var(--color-accent); width: 20px;"></i>  Intell College building, Old, Kalyandurgam Rd, Akkampalle, cross, Anantapur, Rachanapalle, Andhra Pradesh 515006</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-phone-alt" style="color: var(--color-accent); width: 20px;"></i> +91 8988686861/li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-envelope" style="color: var(--color-accent); width: 20px;"></i> srigithamjuniorcollege@gmail<br>.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sri Githam Junior College. All Rights Reserved.</p>
+            <p style="margin-top: 5px; font-size: 0.9em; opacity: 0.8;">Designed &amp; Developed by <a href="https://sathvik222-3.github.io/portfolio/"target="_blank" style="color: var(--color-accent); font-weight: 500;">Sathvik</a></p>
+        </div>
+    </footer>
+
+    <!-- Interactive script specific to gallery -->
+    <script src="js/script.js"></script>
+    <script>
+        // Simple mock filtering visual effect (kept for styling)
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Load More function
+        const loadMoreBtn = document.getElementById('load-more-btn');
+        if (loadMoreBtn) {
+            loadMoreBtn.addEventListener('click', function() {
+                const gallery = document.getElementById('dynamic-gallery');
+                // Add new mock images
+                const newImages = `
+                    <div class="gallery-item">
+                        <img loading="lazy" decoding="async" src="images/gallery/1.png" alt="Sports Grounds" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h4>Sports Meet</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img loading="lazy" decoding="async" src="images/gallery/2.png" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h4>Dining Facilities</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img loading="lazy" decoding="async" src="images/gallery/3.png" alt="College Bus" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h4>Transport</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img loading="lazy" decoding="async" src="images/gallery/4.png" alt="Sports Grounds" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h4>Sports Meet</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img loading="lazy" decoding="async" src="images/gallery/5.png" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h4>Dining Facilities</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img loading="lazy" decoding="async" src="images/gallery/6.png" alt="College Bus" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h4>Transport</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img loading="lazy" decoding="async" src="images/gallery/7.png" alt="Sports Grounds" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h4>Sports Meet</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img loading="lazy" decoding="async" src="images/gallery/8.png" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h4>Dining Facilities</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img loading="lazy" decoding="async" src="images/gallery/9.png" alt="College Bus" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h4>Transport</h4>
+                        </div>
+                    </div>
+                `;
+                gallery.insertAdjacentHTML('beforeend', newImages);
+                
+                // Hide button after loading
+                this.style.display = 'none';
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
